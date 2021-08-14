@@ -2,29 +2,10 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
 
-const Home = ({ navigation }) => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.homeText}>Welcome to TFT Stat Checker!</Text>
-      <Button
-        title='Screen2'
-        onPress={() => navigation.navigate('Screen2')}
-      ></Button>
-    </View>
-  );
-};
-
-const Screen2 = () => {
-  return (
-    <View>
-      <Text>Screen2</Text>
-    </View>
-  );
-};
+import Home from './src/screens/home/home';
+import Screen2 from './src/screens/screen2';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -38,15 +19,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  homeText: {
-    color: '#fff',
-  },
-});

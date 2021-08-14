@@ -1,28 +1,30 @@
 /* Base CSS values for app */
 
-export const colors = {
+const colors = {
   primary: '#4287f5',
   secondary: '#ffffff',
   tertiary: '#000000',
 };
 
-export const padding = {
+const padding = {
   sm: 10,
   md: 20,
   lg: 30,
   xl: 40,
 };
 
-export const margin = {
+const margin = {
   sm: 10,
   md: 20,
   lg: 30,
   xl: 40,
 };
 
-export const fonts = {
+const fonts = {
   sm: 12,
   md: 18,
   lg: 24,
   primary: 'normal',
 };
+
+export { colors, padding, margin, fonts };
