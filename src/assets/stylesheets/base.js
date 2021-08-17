@@ -1,9 +1,9 @@
 /* Base CSS values for app */
 
 const colors = {
-  primary: '#4287f5',
-  secondary: '#ffffff',
-  tertiary: '#000000',
+  primary: '#4287f5', // blueish color
+  secondary: '#ffffff', // white
+  tertiary: '#000000', // black
 };
 
 const padding = {

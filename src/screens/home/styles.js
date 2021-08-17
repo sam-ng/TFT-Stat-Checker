@@ -1,23 +1,31 @@
 import { StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
-import { padding, margin } from '../../assets/stylesheets/base';
+import { colors, padding, margin } from '../../assets/stylesheets/base';
 
 const styles = StyleSheet.create({
-  container: {
+  outerContainer: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: colors.primary,
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
   },
+  rowContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: padding.md,
+  },
   homeText: {
-    color: '#fff',
+    color: colors.secondary,
   },
   searchTextInput: {
-    color: '#fff',
+    color: colors.tertiary,
+    backgroundColor: colors.secondary,
     padding: padding.md,
     margin: margin.md,
+    border: `2px solid ${colors.tertiary}`,
   },
 });
 
